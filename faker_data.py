@@ -18,7 +18,7 @@ def create_csv_file():
             writer.writerow(
                 {
                     'tipo_cultivo':fake.sentence(nb_words=1, ext_word_list=tipo_cultivo),
-                    'ubicacion':fake.street_address(),
+                    'ubicacion':fake.random_int(min=1000, max=2000),
                     'tamanio':fake.random_int(min=100, max=100000),
                     'rdto':fake.random_number(digits=4)/10000,
                     'uso_fertilizantes':fake.boolean()
