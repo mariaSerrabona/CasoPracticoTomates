@@ -1,6 +1,5 @@
 import csv
 from faker import Faker
-import random
 
 registros=10000
 fake=Faker()
